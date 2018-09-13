@@ -220,7 +220,12 @@
 	<script type="text/javascript" src="js/iscroll.js"></script>
 	<script>
 		$(function(){
-			var myScroll = new IScroll('#wrapper', { mouseWheel: true });
+			var myScroll = new IScroll('#wrapper', { 
+				mouseWheel: true,
+				onScrollEnd:function(){
+					console.log("aa");
+				}
+			});
 			var carrousel = new Carrousel("#carrousel");
 			carrousel.init();
 		});
