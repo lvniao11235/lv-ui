@@ -80,3 +80,31 @@ html, body{
 .lv-favourite .lv-focus{
 	float:right;
 }
+
+.lv-favourite-item{
+	background-color:white;
+	border-bottom:1px solid #D7D7D7;
+	width:calc(100% - 20px);
+	padding:5px 10px;
+}
+
+.lv-favourite-item:last-child{
+	border-bottom:none;
+}
+.lv-favourite-title{
+	font-size:20px;
+	margin-bottom:10px;
+	color:black;
+}
+
+.lv-favourite-type{
+	display:inline-block;
+	border:1px solid #D7D7D7;
+	border-radius:10px;
+	padding:2px 5px;
+}
+.lv-favourite-info, .lv-favourite-address{
+	font-size:16px;
+	margin-bottom:5px;
+	color:#D7D7D7;
+}
