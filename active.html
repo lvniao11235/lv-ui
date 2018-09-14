@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>lv-ui</title>
+	<link rel="stylesheet" href="css/lv-ui.css"/>
+	<link rel="stylesheet" href="css/font-awesome.css"/>
+</head>
+<body class="lv-ui">
+	<div class="lv-active-detail">
+		<div class="lv-active-info">
+			<div class="lv-active-title">党员素质提升与民俗技艺课堂：宣传统战科中秋活动（冰皮月饼制作）</div>
+			<div class="lv-active-infos">
+				<span class="lv-active-address fa fa-building-o"> 虹桥镇</span>
+				<span class="lv-active-read">浏览：5</span>
+				<span class="lv-active-save">收藏：0</span>
+				<span class="lv-active-share fa fa-share-square-o"></span>
+			</div>
+			<div class="lv-active-infoss">
+				<div class="lv-active-time"><span class="fa fa-clock-o"></span>2018-09-16 13:00</div>
+				<div class="lv-active-address"><span class="fa fa-map-marker"></span>吴中路1686号W SquareD&F大楼一楼</div>
+				<div class="lv-active-host"><span class="fa fa-user-o"></span>杨焰清</div>
+				<div class="lv-active-phone"><span class="fa fa-phone"></span>13818855282</div>
+			</div>
+			<div class="lv-active-detail-info">
+				<div class="lv-active-detail-info-title"><span>详情</span></div>
+				<div class="lv-active-detail-info-content"></div>
+			</div>
+		</div>
+		
+		<div class="lv-active-control">
+			<div id="btnHome" class="lv-image-button">
+				<div class="lv-image fa fa-home" style="color:#E3170D"></div>
+				<div class="lv-text">首页</div>
+			</div>
+			<div id="btnSave" class="lv-image-button">
+				<div class="lv-image fa fa-heart-o"></div>
+				<div class="lv-text">收藏</div>
+			</div>
+			<div id="btnSignup">立即报名</div>
+		</div>
+		
+	</div>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/lv-ui.js"></script>
+	<script>
+		$(function(){
+			$(".lv-active-detail").css("display", "block");
+			$("#btnHome").click(function(){
+				//$(".lv-active-detail").css("display", "none");
+				//$(".lv-tab-container").css("display", "block");
+				//$(".lv-tab-nav").css("display", "block");
+				window.history.back();
+			});
+			$("#btnSignup").click(function(){
+				window.location.href = "signup.html";
+			});
+		});
+	</script>
+</body>
+</html>

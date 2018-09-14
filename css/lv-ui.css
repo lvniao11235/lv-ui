@@ -40,7 +40,7 @@ html, body{
 }
 
 .lv-nav-item.selected{
-	color:green;
+	color:#E3170D;
 }
 
 .lv-tab-nav .lv-nav-item{
@@ -86,6 +86,8 @@ html, body{
 	border-bottom:1px solid #D7D7D7;
 	width:calc(100% - 20px);
 	padding:5px 10px;
+	display:block;
+	text-decoration:none;
 }
 
 .lv-favourite-item:last-child{
@@ -114,4 +116,165 @@ html, body{
 	height:100px;
 	font-size:30px;
 	text-align:center;
+}
+
+.lv-active-detail{
+	height:100%;
+	width:100%;
+	display:none;
+	background-color:#F8F8FF;
+}
+
+.lv-active-control{
+	position:fixed;
+	bottom:0;
+	height:60px;
+	border-top:1px solid #D7D7D7;
+	width:100%;
+	background-color:white;
+}
+
+#btnHome, #btnSave, #btnSignup{
+	display:inline-block;
+	text-align:center;
+	font-size:20px;
+	width:60px;
+}
+
+#btnHome, #btnSave{
+	height:50px;
+	padding-top:10px;
+}
+
+#btnHome{
+	border-right:1px solid #D7D7D7
+}
+
+#btnSignup{
+	width:calc(100% - 120px - 1px);
+	background-color:#E3170D;
+	color:white;
+	height:60px;
+	line-height:60px;
+	vertical-align:middle;
+	float:right;
+}
+
+.lv-active-detail .lv-active-title{
+	font-size:20px;
+	font-weight:bolder;
+	padding:10px;
+	text-align:left;
+	background-color:white;
+}
+
+.lv-active-detail .lv-active-infos{
+	border-bottom:1px solid #D7D7D7;
+	background-color:white;
+}
+.lv-active-detail .lv-active-infos span{
+	font-size:16px;
+	color:#D7D7D7;
+	margin:10px;
+}
+
+.lv-active-detail .lv-active-infos .lv-active-share{
+	display:block;
+	float:right;
+	font-size:30px;
+	margin-top:0px;
+}
+
+.lv-active-detail .lv-active-infoss{
+	padding:20px 0px;
+	background-color:white;
+	
+}
+.lv-active-detail .lv-active-infoss div{
+	font-size:16px;
+	color:#292421;
+	margin:10px 10px;
+	display:block;
+}
+
+.lv-active-detail .lv-active-infoss span{
+	color:#FFD700;
+	width:20px;
+	margin-right:10px;
+	display:inline-block;
+	text-align:center;
+}
+
+.lv-active-detail .lv-active-detail-info{
+	margin-top:10px;
+	background-color:white;
+}
+
+.lv-active-detail .lv-active-detail-info-title{
+	border-bottom:1px solid #D7D7D7;
+}
+
+.lv-active-detail .lv-active-detail-info-title span{
+	font-size:16px;
+	color:#E3170D;
+	display:inline-block;
+	border-bottom:1px solid #E3170D;
+	margin-left:10px;
+	margin-top:20px;
+	padding-bottom:10px;
+}
+
+.lv-active-detail .lv-active-detail-info-content{
+	padding:10px;
+}
+
+.lv-sign-name{
+	margin-top:100px;
+	border-top:1px solid #D7D7D7;
+	border-bottom:1px solid #D7D7D7;
+	font-size:20px;
+	padding:10px;
+}
+
+.lv-sign-phone{
+	border-bottom:1px solid #D7D7D7;
+	font-size:20px;
+	padding:10px;
+}
+
+.lv-sign-label{
+	width:90px;
+	display:inline-block;
+	text-align:center;
+}
+
+.lv-sign input{
+	outline:none;
+	border:none;
+	font-size:20px;
+}
+
+.lv-sign-button{
+	width:60%;
+	margin:50px auto;
+	font-size:20px;
+	border-radius:10px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	vertical-align:middle;
+	background-color:#E3170D;
+	color:white;
+}
+
+.lv-return{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:60px;
+	text-align:center;
+	line-height:60px;
+	vertical-align:middle;
+	border-top:1px solid #D7D7D7;
+	font-size:25px;
 }

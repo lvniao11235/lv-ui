@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>lv-ui</title>
+	<link rel="stylesheet" href="css/lv-ui.css"/>
+	<link rel="stylesheet" href="css/font-awesome.css"/>
+</head>
+<body class="lv-ui">
+	<div class="lv-sign">
+		<div class="lv-sign-name">
+			<span class="lv-sign-label">姓名</span>
+			<input type="text" placeholder="请输入姓名"/>
+		</div>
+		<div class="lv-sign-phone">
+			<span class="lv-sign-label">电话号码</span>
+			<input type="text" placeholder="请输入电话"/>
+		</div>
+		<div class="lv-sign-button">报名</div>
+	</div>
+	<div class="lv-return">&lt 返回</div>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/lv-ui.js"></script>
+	<script>
+		$(function(){
+			$(".lv-return").click(function(){
+				window.history.back();
+			});
+		});
+	</script>
+</body>
+</html>
